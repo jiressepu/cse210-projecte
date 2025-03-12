@@ -2,8 +2,17 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello World! This is the Exercise1 Project.");
+        // Demander le prénom
+        Console.Write("What is your first name? ");
+        string firstName = Console.ReadLine();
+
+        // Demander le nom de famille
+        Console.Write("What is your last name? ");
+        string lastName = Console.ReadLine();
+
+        // Afficher le message formaté
+        Console.WriteLine($"Your name is {lastName}, {firstName} {lastName}.");
     }
 }
